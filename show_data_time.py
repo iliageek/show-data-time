@@ -1,7 +1,10 @@
-import time
+# Getting current date and time using now().
 
-while True:
-    from datetime import datetime
-    now = datetime.now()
-    print ("%s/%s/%s %s:%s:%s" % (now.month,now.day,now.year,now.hour,now.minute,now.second))
-    time.sleep(10)
+# importing datetime module for now()
+import datetime
+
+# using now() to get current time
+current_time = datetime.datetime.now()
+
+# Printing value of now.
+print("Time now at greenwich meridian is:", current_time)
